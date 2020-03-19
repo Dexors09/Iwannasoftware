@@ -1,11 +1,12 @@
 *{
     margin: 0; 
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body{
     font-family: 'Rubik', sans-serif;
+    
 }
 
 .contenedor{
@@ -32,11 +33,11 @@ body{
 
 header{
     width: 100%;
-    height: 640px;
-    background: #134E5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(135, 30%, 57%, 0.527), hsla(193, 66%, 22%, 0.418)), url(../img/background_2.jpg);  
+    height: 680px;
+    background: rgb(37, 124, 148);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(135, 52%, 65%, 0.527), hsla(193, 66%, 22%, 0.418)), url(../img/background_1.jpg);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(135, 30%, 57%, 0.521), hsla(193, 66%, 22%, 0.479)), url(../img/background_2.jpg); 
+    background: linear-gradient(to right, hsla(135, 33%, 34%, 0.521), hsla(193, 66%, 22%, 0.479)), url(../img/background_1.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
@@ -138,7 +139,6 @@ header .textos-header{
 
 .imagen-port{
     width: 45%;
-    height: 240px;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
@@ -180,4 +180,179 @@ header .textos-header{
 
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
+}
+
+.nuestros-servicios{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicios-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer{
+    background: #414141;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.content-footer{
+    text-align: center;
+
+}
+
+.content-footer h4{
+    color: #fff;
+    border-bottom: 3px solid rgb(66, 139, 97);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-footer p{
+    color: #ccc;
+ 
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 15px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-sobre-nosotros{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 60%;
+    }
+
+    .servicios-content{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 50px;
+    }
+
+    .servicio-ind img{
+        width: 80%;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-sobre-nosotros{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 90%;
+    }
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-footer{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-footer h4{
+        border: none;
+    }
+
+    .content-footer p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
 }
